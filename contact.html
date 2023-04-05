@@ -1,0 +1,160 @@
+<html>
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+ 
+ <nav class="navbar navbar-expand-lg bg-primary mt-1">
+    <div class="container-fluid">
+      <a class="navbar-brand text-white" href="#" ><img src="Product/logo.png" height="70px" width="80px" class="img-fluid"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="index.html"><span class="fa fa-home"></span>&nbsp;Home</a>
+          </li>
+          
+          <li class="nav-item">
+            <a class="nav-link text-white" href="shop.html"><span class="fa fa-shopping-bag"></span>&nbsp;Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#login"><span class="fa fa-sign-in"></span>&nbsp;Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#" data-bs-toggle="modal" data-bs-target="#signup"><span class="fa fa-user-plus"></span>&nbsp;SignUp</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="contact.html"><span class="fa fa-users"></span>&nbsp;Contact</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success text-white" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav> 
+<!-- Login form -->
+
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Login Form</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Password:</label>
+              <input type="password" class="form-control" id="pass">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- SignUp -->
+
+<div class="modal fade" id="signup" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">SignUpForm</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Name:</label>
+                <input type="text" class="form-control" id="name">
+              </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Email:</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Password:</label>
+              <input type="password" class="form-control" id="pass">
+            </div>
+            <div class="mb-3">
+                <label for="message-text" class="col-form-label">Mobile:</label>
+                <input type="number" class="form-control" id="mob">
+              </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">SignUp</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+<div class="row mt-2">
+<div class="left col-sm-12 col-md-6 col-lg-4 col-xl-4 col-xxl-3 p-4">
+<img src="Product/user.png" class="img-fluid">
+</div>
+<div class="right col-sm-12 col-md-6 col-lg-8 col-xl-8 col-xxl-9 p-2">
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Enter name:</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name">
+      </div>
+    <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email :</label>
+        <input type="email" class="form-control" id="email" placeholder="Enter Email">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Message:</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+      </div>
+      <div class="mb-3">
+       
+        <input type="submit" class="form-control bg-info">
+      </div>
+
+</div>
+</div>
+<!-- footer  -->
+<div class="footer container-fluid text-center bg-dark text-white h-50 mb-2">
+  <div class="row align-items-center">
+    <div class="col">
+      <img class="mt-5" src="./Product/logo.png" alt="" height="200px" width="200px">
+
+    </div>
+    <div class="col">
+      <h3>Home Shop</h3>
+      <i class="fa fa-facebook " aria-hidden="true"></i>
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div class="sub-footer bg-white text-black mt-2 text-center">
+<div class="container">
+<div class="row">
+  <p class="fa fa-copyright">2023 design by Shivam Aggarwal</p>
+</div>
+</div>
+</div>
+</body>
+</html>
